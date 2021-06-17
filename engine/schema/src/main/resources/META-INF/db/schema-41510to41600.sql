@@ -259,6 +259,7 @@ CREATE VIEW `cloud`.`disk_offering_view` AS
         `disk_offering`.`compute_only` AS `compute_only`,
         `disk_offering`.`display_offering` AS `display_offering`,
         `disk_offering`.`state` AS `state`,
+        `disk_offering`.`disk_size_strictness` AS `disk_size_strictness`,
         `vsphere_storage_policy`.`value` AS `vsphere_storage_policy`,
         GROUP_CONCAT(DISTINCT(domain.id)) AS domain_id,
         GROUP_CONCAT(DISTINCT(domain.uuid)) AS domain_uuid,
